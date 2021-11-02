@@ -35,10 +35,8 @@ bool prime_checker(int num){
   int count = 0;
   for(int i = 2; i < num / 2; i++)
     if(num % i == 0)
-      count++;
-
-  if(count > 1)
-    return false;
+      return false;
+  
   return true;
 }
 
